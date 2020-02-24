@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>POTOF</title></head>
+<body>
+<div id="selectUserPart">
+<div class="c-popup__backdrop"></div>
+<div class="c-popup">
+  <div class="c-popup__title">Choix des joueurs</div>
+  <div class="c-popup__content">
+    <div class="c-player">
+      <div class="c-player__name">
+        <input type="text" name="playerName" placeholder="Pseudo du joueur">
+      </div>
+      <div class="c-player__color">
+        <input type="color" name="playerColor" placeholder="Couleur du joueur">
+      </div>
+      <div class="c-player__is-bot">
+        <input type="checkbox" name="playerBot">
+      </div>
+    </div>
+    
+    <div class="c-player">
+      <div class="c-player__name">
+        <input type="text" name="playerName" placeholder="Pseudo du joueur">
+      </div>
+      <div class="c-player__color">
+        <input type="color" name="playerColor" placeholder="Couleur du joueur">
+      </div>
+      <div class="c-player__is-bot">
+        <input type="checkbox" name="playerBot" checked>
+      </div>
+    </div>
+  </div>
+  <div class="c-popup__action">
+    <div class="c-button c-button__primary c-start">Lancer le jeu</div>
+  </div>
+</div>
+</div>
+
+<div class="c-popup c-popup--top c-game-end hide">
+  <div class="c-game-end__text"></div>
+  <div class="c-button c-button__primary c-game-end__retry">Recommencer</div>
+</div>
+<div class="c-popup c-popup--top c-game-current-player hide">
+  <div class="c-popup__title"></div>
+</div>
+<canvas class="c-game-canvas"></canvas>
+</body>
+</html>

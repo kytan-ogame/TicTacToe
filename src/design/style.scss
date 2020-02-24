@@ -1,0 +1,67 @@
+$midnight-blue : #2c3e50;
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+body {
+	background-color: $midnight-blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-popup{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: flex;
+	background-color: #ddd;
+	justify-content: center;
+	align-items: stretch;
+	flex-flow: column nowrap;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 50px rgba(0,0,0,.4);
+	min-width: 800px;
+	&--top{
+		top: 0;
+		transform: translateX(-50%);
+	}
+	&__title:not(:empty){
+		font-weight: bold;
+		padding: 10px 20px;
+		background: rgba(0,0,0,.2);
+		text-align: center;
+	}
+	&__content{
+		padding: 15px;
+	}
+	&__action{
+	}
+	&__backdrop{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0,0,0,.2);
+	}
+}
+.c-player{
+	display: flex;
+}
+
+input[type="text"]{
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid;
+	background: none;
+}
+.hide{
+	display: none;
+}
+
+.c-game-current-player{
+
+}
